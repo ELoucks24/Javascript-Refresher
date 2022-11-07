@@ -1,14 +1,15 @@
-let myString = 'this is so weird'
-let consonants = ['B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Z']
+let vowles = 'aeiou'
+let mySent = 'thank god'
 
+let boptalk = ''
 
-myString = myString.toLowerCase()
-console.log(myString)
+for (let i = 0; i < mySent.length; i++) {
+    let letter = mySent[i]
+    if (vowles.includes(letter)) {
+        boptalk = boptalk + letter + ' '
 
-For (let ,i = 0, i < consonants.length, i++);{
-    myString = myString.replaceAll(consonants[i], consonants[i] + 'op')
+    } else {
+        boptalk = boptalk + letter + 'op'
+    }
 }
-console.log(myString)
-
-myString = myString.replaceAll('op ', ' ')
-console.log(myString)
+    console.log(boptalk)
