@@ -25,3 +25,4 @@ function aboutStudent(student) {
         console.log(student.firstName + ' ' + student.lastName + ' has a gpa of ' + student.gpa + ' and does not play vollyball')
     }
 }
+console.log (aboutStudent)
